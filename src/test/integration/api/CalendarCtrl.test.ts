@@ -4,7 +4,7 @@ import * as SuperTest from "supertest";
 import {Server} from "../../../Server";
 
 
-describe("Calendars", () => {
+describe("Calendars API test", () => {
   let request;
   // bootstrap your expressApplication in first
   beforeAll(TestContext.bootstrap(Server));
