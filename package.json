@@ -5,17 +5,26 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run tsc",
-    "postinstall": "npm run build",
+    "test": "npm run build && jest --watchAll --config jest.config.js",    
     "tsc": "tsc --project tsconfig.json",
     "tsc:w": "tsc -w",
+    "postinstall": "npm run build",
     "start": "nodemon --watch '**/*.ts' --ignore 'node_modules/**/*' --exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nestjs/testing": "^6.5.3",
+    "@tsed/testing": "^5.27.4",
     "@types/express": "^4.17.1",
+    "@types/jest": "^24.0.13",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.8.0",
+    "nestjs": "0.0.1",
     "nodemon": "^1.19.1",
+    "supertest": "4.0.2",
+    "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   },
