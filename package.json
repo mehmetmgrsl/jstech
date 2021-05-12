@@ -31,7 +31,7 @@
   "dependencies": {
     "@nestjs/testing": "^5.1.0",
     "@tsed/common": "^5.27.4",
-    "@tsed/core": "^5.27.4",
+    "@tsed/core": "^5.65.7",
     "@tsed/di": "^5.27.4",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
